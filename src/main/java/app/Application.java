@@ -2,8 +2,16 @@ package app;
 
 import app.config.AppConfig;
 import app.model.AnimalsCage;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+/*
+1) Создайте бин Dog, унаследуйте его от Animal. Создайте на основе этого класса компонент.+
+2) Запустите приложение и проверьте, что было выброшено исключение NoUniqueBeanDefinitionException. Это произошло из-за того, что существует 2 бина с типом Animal.+
+3) Прочитайте о связывании бинов по имени и свяжите AnimalCage c бином Dog через абстрактный класс Animal.+
+4) На основе класса Timer создайте бин+. Свяжите с AnimalCage. Проверьте, что при выполнении метода main время, которое пишет таймер, одно и тоже.
+5) Раскоментировать тест из заготовки и проверить своё решение.
+*/
 
 public class Application {
 
